@@ -1,0 +1,9 @@
+.root {
+  object-fit: cover;
+  max-width: 100%;
+  width: 8%;
+  position: relative;
+}
+.root > picture > img {
+  object-fit: cover;
+}

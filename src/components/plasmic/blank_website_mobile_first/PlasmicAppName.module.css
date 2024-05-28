@@ -1,0 +1,10 @@
+.root {
+  width: 82px;
+  height: 53px;
+  max-width: 100%;
+  color: #ffffff;
+  font-family: "Orelega One";
+  font-size: 25px;
+  transform: translateX(0px) translateY(0px) translateZ(0px);
+  position: relative;
+}

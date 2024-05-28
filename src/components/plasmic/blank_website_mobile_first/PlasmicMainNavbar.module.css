@@ -1,0 +1,53 @@
+.root {
+  display: grid;
+  align-content: flex-start;
+  justify-items: center;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  background: #049b1f;
+  box-shadow: none;
+  height: 105px;
+  position: relative;
+  grid-column-start: 1 !important;
+  grid-column-end: -1 !important;
+  grid-template-columns:
+    var(--plsmc-viewport-gap) 1fr minmax(0, var(--plsmc-wide-chunk))
+    min(
+      var(--plsmc-standard-width),
+      calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
+    )
+    minmax(0, var(--plsmc-wide-chunk)) 1fr var(--plsmc-viewport-gap);
+  border-bottom: 1px solid #bfbfbfeb;
+}
+.root > * {
+  grid-column: 4;
+}
+@media (min-width: 768px) {
+  .root > * {
+    grid-column: 4;
+  }
+}
+.appName:global(.__wab_instance) {
+  position: absolute;
+  top: 13px;
+  left: 8px;
+}
+@media (min-width: 768px) {
+  .appName:global(.__wab_instance) {
+    left: -235px;
+    top: 30px;
+  }
+}
+.dataBox:global(.__wab_instance) {
+  position: absolute;
+  top: 9px;
+  left: 187px;
+}
+.sectionTitle:global(.__wab_instance) {
+  position: absolute;
+  top: 74px;
+  left: 131px;
+  bottom: auto;
+  right: auto;
+}

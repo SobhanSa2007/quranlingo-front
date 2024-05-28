@@ -1,0 +1,15 @@
+.root {
+  object-fit: cover;
+  max-width: 100%;
+  width: 10%;
+  position: relative;
+}
+.root > picture > img {
+  object-fit: cover;
+}
+.root:hover {
+  mix-blend-mode: lighten;
+}
+.root:active {
+  mix-blend-mode: difference;
+}
